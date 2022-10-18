@@ -25,6 +25,8 @@
 		BE603D7928FF1E8300007ADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE603D7B28FF1E8300007ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE603D8128FF1EC800007ADF /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		BE603D8228FF20D400007ADF /* SecretsDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SecretsDebug.xcconfig; sourceTree = "<group>"; };
+		BE603D8328FF215500007ADF /* SecretsRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SecretsRelease.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,8 @@
 		BE603D6128FF1E8000007ADF = {
 			isa = PBXGroup;
 			children = (
+				BE603D8328FF215500007ADF /* SecretsRelease.xcconfig */,
+				BE603D8228FF20D400007ADF /* SecretsDebug.xcconfig */,
 				BE603D8128FF1EC800007ADF /* Secrets.xcconfig */,
 				BE603D6C28FF1E8000007ADF /* ManagingScrets */,
 				BE603D6B28FF1E8000007ADF /* Products */,
@@ -170,7 +174,7 @@
 /* Begin XCBuildConfiguration section */
 		BE603D7C28FF1E8300007ADF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE603D8128FF1EC800007ADF /* Secrets.xcconfig */;
+			baseConfigurationReference = BE603D8228FF20D400007ADF /* SecretsDebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -232,7 +236,7 @@
 		};
 		BE603D7D28FF1E8300007ADF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE603D8128FF1EC800007ADF /* Secrets.xcconfig */;
+			baseConfigurationReference = BE603D8328FF215500007ADF /* SecretsRelease.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
